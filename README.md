@@ -1,16 +1,51 @@
-# islamic_companion_app
+#  Islamic Companion App
 
-A new Flutter project.
+A cross-platform Islamic Companion application built with **Flutter**, providing:
+- Accurate prayer times based on user location
+- Qibla direction (web + mobile support)
+- Manual location fallback
+- Clean, modern UI
 
-## Getting Started
+🔗 **Live Web App:**  
+https://rohanxco.github.io/islamic_companion_app/
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+##  Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📍 **Automatic location detection**
+- 🕋 **Qibla direction**
+  - Web: calculated bearing + static arrow
+  - Mobile (Android/iOS): real-time compass rotation
+- 🕰️ **Daily prayer times**
+- ⚙️ **Manual location settings** (fallback when GPS is unavailable)
+- 🌍 Works worldwide
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+##  Technology Stack
+
+- **Flutter** (single codebase)
+- **Dart**
+- `geolocator` – location services
+- `adhan` – prayer time calculations
+- `flutter_compass` – device compass (mobile)
+- GitHub Pages – web deployment
+
+---
+
+##  Platform Support
+
+| Platform | Status |
+|--------|--------|
+| Web (Browsers) | ✅ |
+| Android APK | ✅ |
+| iOS | ✅ (build-ready) |
+
+---
+
+##  Running Locally
+
+```bash
+flutter pub get
+flutter run -d chrome
